@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>提起投诉</title>
+</head>
+<body>
+ <h><strong>请填写投诉内容</strong></h><br/>
+<textarea id="nr" cols="60" rows="10"></textarea><br/>
+<button id="tj">提交</button>
+
+    <script>
+       
+ var tj = document.getElementById('tj');
+ 
+ tj.onclick = function () {
+    var rr = document.querySelector('[id="nr"]').value;
+    console.log(rr);
+    alert('提交成功！我们将马上处理')
+ }
+    </script>
+   
+</body>
+</html>
